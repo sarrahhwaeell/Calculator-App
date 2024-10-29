@@ -1,5 +1,4 @@
 import streamlit as st
-# Custom CSS for background image
 page_bg_img = '''
 <style>
 .stApp {
@@ -9,14 +8,10 @@ page_bg_img = '''
 }
 </style>
 '''
-# Applying the background image
 st.markdown(page_bg_img, unsafe_allow_html=True)
-# Calculator with Emojis
 st.write('# 🧮 CALCULATOR')  # Emoji for the calculator title
-# Input fields for numbers
 number1 = st.number_input('🔢 Please, enter first number')
 number2 = st.number_input('🔢 Please, enter second number')
-# Add a submit button
 if st.button('Calculate 💡'):  # Button with emoji
     num3 = number1 + number2
     st.write('# 📝 The answer is: ', num3)  # Show result after clicking the button
